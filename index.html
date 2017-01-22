@@ -36,7 +36,7 @@
     
 </head>
 
-<body>
+<body  ng-controller="MainController as controller">
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -45,7 +45,7 @@
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a href="#top" onclick=$("#menu-close").click();>MCR</a>
             </li>
             <li>
                 <a href="#top" onclick=$("#menu-close").click();>Home</a>
@@ -66,12 +66,17 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header" ng-controller="HeaderController as header">
+    <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1> {{ header.title }} </h1>
-            <h3>{{ header.subtitle }}</h3>
+            <h1> {{ controller.title }} </h1>
+            <h3>{{ controller.subtitle }}</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg"> {{ header.buttonLink }}</a>
+            <!--<a href="#about" class="btn btn-dark btn-lg"> {{ header.buttonLink }}</a>-->
+            <div class="btn-group" role="group" aria-label="Languages">
+                <button class="btn btn-dark" ng-click="controller.switchLanguage('en')">English</button>
+                <button class="btn btn-dark" ng-click="controller.switchLanguage('rs')">русский</button>
+                <button class="btn btn-dark" ng-click="controller.switchLanguage('ch')">中国</button>
+            </div>
         </div>
     </header>
 
