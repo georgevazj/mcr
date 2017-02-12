@@ -33,7 +33,7 @@
     <script src="./src/app.js"></script>
     <script src="./src/controller.js"></script>
     <script src="./src/directives.js"></script>
-    
+
 </head>
 
 <body  ng-controller="MainController as controller">
@@ -43,7 +43,7 @@
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            
+
             <li class="sidebar-brand">
                 <a href="#top" onclick=$("#menu-close").click();>MCR</a>
             </li>
@@ -70,7 +70,7 @@
         <div class="text-vertical-center">
             <div style="color:#F7F9F9";>
                 <h1> {{ controller.title }} </h1>
-                <h3>{{ controller.subtitle }}</h3>
+                <h2>{{ controller.subtitle }}</h2>
             </div>
             <br>
             <!--<a href="#about" class="btn btn-dark btn-lg"> {{ header.buttonLink }}</a>-->
@@ -166,7 +166,7 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+            <h1>{{ controller.calloutTitle }}</h1>
         </div>
     </aside>
 
@@ -175,34 +175,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
+                    <h2>{{ controller.portfolioSection }}</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                    <img class="img-portfolio img-responsive" src="img/signature1.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                    <img class="img-portfolio img-responsive" src="img/signature2.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                    <img class="img-portfolio img-responsive" src="img/signature3.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    <img class="img-portfolio img-responsive" src="img/signature4.jpg">
                                 </a>
                             </div>
                         </div>
@@ -240,7 +240,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Contact</h2>
+                    <h2>{{ controller.contact }}</h2>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:cromerony@gmail.com">cromerony@gmail.com</a>

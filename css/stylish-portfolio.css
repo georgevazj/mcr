@@ -4,8 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-/* Global Styles */
 
+/* Font config */
+
+@font-face {
+  font-family: 'SoriaFont';
+  src: url('../fonts/SoriaFont.ttf');
+}
+
+/* Global Styles */
 html,
 body {
     width: 100%;
@@ -13,7 +20,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "SoriaFont",Fallback,sans-serif;
 }
 
 .text-vertical-center {
@@ -155,7 +162,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpeg) no-repeat center center scroll;
+    background: url(../img/louvre.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -185,7 +192,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/bg2.jpeg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

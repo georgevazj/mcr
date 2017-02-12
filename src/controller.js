@@ -4,7 +4,7 @@ app.controller("MainController", mainCtrl);
 
 function mainCtrl($http) {
 	var vm = this;
-	
+
 	vm.title = "MCR";
 	vm.subtitle = "Artist advisor";
 
@@ -13,6 +13,11 @@ function mainCtrl($http) {
 	vm.menuServices = "Services";
 	vm.menuPortfolio = "Portfolio";
 	vm.menuContact = "Contact";
+
+	vm.portfolioSection = "Our work";
+
+	vm.calloutTitle = "Art Advising";
+	vm.contact = "Contact";
 
 	vm.switchLanguage = function(lang){
 		if (lang=="en"){
@@ -25,6 +30,12 @@ function mainCtrl($http) {
 			vm.menuPortfolio = "Portfolio";
 			vm.menuContact = "Contact";
 
+			vm.portfolioSection = "Our work";
+
+
+			vm.calloutTitle = "Art Advising";
+			vm.contact = "Contact";
+
 		}
 		else if(lang == "rs") {
 			vm.subtitle = "художник советник";
@@ -35,6 +46,12 @@ function mainCtrl($http) {
 			vm.menuServices = "Сервисы";
 			vm.menuPortfolio = "портфолио";
 			vm.menuContact = "контакт";
+
+			vm.portfolioSection = "Наша работа";
+
+			vm.calloutTitle = "Искусство Консультирование";
+
+			vm.contact = "контакт";
 		}
 		else if(lang == "ch"){
 			vm.subtitle = "艺术家顾问";
@@ -45,6 +62,11 @@ function mainCtrl($http) {
 			vm.menuServices = "服务";
 			vm.menuPortfolio = "皮包";
 			vm.menuContact = "联系";
+
+			vm.portfolioSection = "我们的工作";
+
+			vm.calloutTitle = "咨询";
+			vm.contact = "联系";
 		}
 	}
 }
