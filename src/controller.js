@@ -6,7 +6,7 @@ function mainCtrl($http) {
 	var vm = this;
 
 	vm.title = "MCR";
-	vm.subtitle = "Artist advisor";
+	vm.subtitle = "Art advisor";
 
 	vm.menuHome = "Home";
 	vm.menuAbout = "About";
@@ -21,7 +21,7 @@ function mainCtrl($http) {
 
 	vm.switchLanguage = function(lang){
 		if (lang=="en"){
-			vm.subtitle = "Artist advisor";
+			vm.subtitle = "Art advisor";
 			vm.buttonLink = "Find Out More";
 
 			vm.menuHome = "Home";
