@@ -6,7 +6,7 @@ function mainCtrl($http) {
 	var vm = this;
 
 	vm.title = "MCR";
-	vm.subtitle = "Art advisor";
+	vm.subtitle = "Art advisors. Only by appointment";
 
 	vm.menuHome = "Home";
 	vm.menuAbout = "About";
@@ -14,14 +14,14 @@ function mainCtrl($http) {
 	vm.menuPortfolio = "Portfolio";
 	vm.menuContact = "Contact";
 
-	vm.portfolioSection = "Our work";
+	vm.portfolioSection = "Artists";
 
 	vm.calloutTitle = "Art Advising";
 	vm.contact = "Contact";
 
 	vm.switchLanguage = function(lang){
 		if (lang=="en"){
-			vm.subtitle = "Art advisor";
+			vm.subtitle = "Art advisors. Only by appointment";
 			vm.buttonLink = "Find Out More";
 
 			vm.menuHome = "Home";
@@ -30,7 +30,7 @@ function mainCtrl($http) {
 			vm.menuPortfolio = "Portfolio";
 			vm.menuContact = "Contact";
 
-			vm.portfolioSection = "Our work";
+			vm.portfolioSection = "Artists";
 
 
 			vm.calloutTitle = "Art Advising";
